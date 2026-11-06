@@ -4,11 +4,5 @@ using System.Text;
 
 namespace Ingatlan
 {
-    public static class Adokalkulator
-    {
-        public static double VagyonszerzesiAdo(double arEzerFt)
-        {
-            return arEzerFt * 1000 * 0.04;
-        }
-    }
+    public static class Adokalkulator{ public static double VagyonszerzesiAdo(double arEzerFt){ return arEzerFt * 1000 * 0.04; }}
 }
