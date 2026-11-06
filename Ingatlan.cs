@@ -34,23 +34,9 @@ namespace Ingatlan
         }
 
         // metodusok
-        public override string ToString()
-        {
-            return $"{Azonosito} {Cim} {Kategoria} - Terület: {AlapteruletM2} m2 | Ár: {ArEzerFt} ezer ft.";
-        }
-
-        public double NegyzetmeterAr()
-        {
-            return (ArEzerFt * 1000.0) / AlapteruletM2;
-        }
-
+        public override string ToString(){ return $"{Azonosito} {Cim} {Kategoria} - Terület: {AlapteruletM2} m2 | Ár: {ArEzerFt} ezer ft."; }
+        public double NegyzetmeterAr(){ return (ArEzerFt * 1000.0) / AlapteruletM2; }
           //+
-        public bool KategoriaEgyezik(string keresettKategoria)
-        {
-            if (keresettKategoria == Kategoria)
-            {
-                return true;
-            } else { return false; }
-        }
+        public bool KategoriaEgyezik(string keresettKategoria){ if (keresettKategoria == Kategoria){ return true; } else { return false; }}
     }
 }
