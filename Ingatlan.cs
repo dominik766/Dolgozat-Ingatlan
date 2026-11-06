@@ -43,5 +43,14 @@ namespace Ingatlan
         {
             return (ArEzerFt * 1000.0) / AlapteruletM2;
         }
+
+          //+
+        public bool KategoriaEgyezik(string keresettKategoria)
+        {
+            if (keresettKategoria == Kategoria)
+            {
+                return true;
+            } else { return false; }
+        }
     }
 }
